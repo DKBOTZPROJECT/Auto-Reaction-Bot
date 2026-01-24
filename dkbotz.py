@@ -5,6 +5,7 @@ class Bot(DKBOTZ):
     async def start(self):
         await super().start()
         me = await self.get_me()
+        temp.ME = me
         print(f"✅ Bot info: {me.id} | @{me.username}")
 
 app = Bot(
